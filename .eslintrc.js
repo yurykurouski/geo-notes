@@ -1,7 +1,11 @@
 module.exports = {
   root: true,
-  extends: ["universe/native"],
-  plugins: ["eslint-plugin-simple-import-sort", "unused-imports"],
+  extends: ["universe/native", "plugin:react-hooks/recommended"],
+  plugins: [
+    "eslint-plugin-simple-import-sort",
+    "unused-imports",
+    "react-hooks",
+  ],
   rules: {
     "simple-import-sort/exports": "error",
     "simple-import-sort/imports": "error",
